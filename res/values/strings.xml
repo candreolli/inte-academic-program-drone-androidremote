@@ -4,5 +4,6 @@
     <string name="app_name">GameStick</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="image_explanations"> Image used to blit the drone video stream</string>
 
 </resources>

@@ -1,5 +1,6 @@
 package com.example.gamestick;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
@@ -16,6 +17,7 @@ import android.view.View;
  * @author Cédric Andreolli - Intel Corporation
  *
  */
+@SuppressLint("DrawAllocation")
 public class GameStick extends View{
 	/**
 	 * The background image.

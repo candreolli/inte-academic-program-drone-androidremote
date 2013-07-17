@@ -26,10 +26,6 @@ public class Client extends Thread{
 	 * The socket use to send the commands
 	 */
 	private Socket clientSocketCommand = null;
-	/**
-	 * The socket use to receive the video stream.
-	 */
-	private Socket clientSocketVideo = null;
 
 	/**
 	 * The port used to send commands.

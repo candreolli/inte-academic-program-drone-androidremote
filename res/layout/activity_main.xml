@@ -15,6 +15,7 @@
         android:id="@+id/IDImageView"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
+        android:contentDescription="@string/image_explanations"
          />
 
     <LinearLayout
@@ -37,7 +38,8 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        android:baselineAligned="false" >
 
         <LinearLayout
             android:layout_width="fill_parent"

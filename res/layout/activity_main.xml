@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.gamestick"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#0860a8"
+    android:orientation="vertical"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/IDImageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/jleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/jright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <com.example.gamestick.GameStick
+                android:id="@+id/IDStickLeft"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                app:resetX="true"
+                app:resetY="true" 
+                app:singleAxis="false" >
+            </com.example.gamestick.GameStick>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="right" >
+
+            <com.example.gamestick.GameStick
+                android:id="@+id/IDStickRight"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                app:resetX="true"
+                app:resetY="false"
+                app:singleAxis="true" >
+
+            </com.example.gamestick.GameStick>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

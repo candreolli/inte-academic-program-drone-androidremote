@@ -204,7 +204,12 @@ public class GameStick extends View{
 
 			//Compute the stick position at startup
 			int posX = (this.canvasWidth - this.stick_size) / 2;
-			int posY = (this.canvasHeight - this.stick_size) / 2;
+
+			int posY;
+			if(!this.resetY)
+				posY = this.canvasHeight - this.stick_size;
+			else
+				posY = (this.canvasHeight - this.stick_size) / 2;
 			this.newPosition.x = posX;
 			this.newPosition.y = posY;
 			this.previousPosition = new Point(this.newPosition);

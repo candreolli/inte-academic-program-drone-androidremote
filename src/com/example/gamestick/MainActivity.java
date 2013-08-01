@@ -145,7 +145,7 @@ public class MainActivity extends Activity {
 				tvl.setText(""+newPosition);
 				if(MainActivity.this.client != null){
 					try {
-						MainActivity.this.client.changePosition(100-newPosition.x, 1);
+						MainActivity.this.client.changePosition(newPosition.x, 1);
 						MainActivity.this.client.changePosition(newPosition.y, 5);
 					} catch (IOException e) {
 						e.printStackTrace();
